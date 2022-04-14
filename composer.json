@@ -1,0 +1,9 @@
+{
+    "name": "kosipov/ttteeesst",
+    "autoload": {
+        "psr-4": {
+            "Kosipov\\Ttteeesst\\": "src/"
+        }
+    },
+    "require": {}
+}
