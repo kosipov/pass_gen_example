@@ -9,7 +9,13 @@ $passwordGen = new PasswordGenerator();
 
 $passwordRules = new RulesPassword();
 
-$genPassword = $passwordGen->generate($passwordRules);
+/**
+ * $_POST['number'] = true
+ */
+if ($_POST['submit']) {
+    $genPassword = $passwordGen->generate($_POST['text'], $_POST['number'], $_POST['letter'], $_POST['symbol']);
+}
+
 
 ?>
 
